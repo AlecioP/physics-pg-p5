@@ -8,14 +8,14 @@
  *  */ 
 
  class Projectile{
+        static palette = ["#E59577","#EB8851","#774E7A","#763142","#243E81"];
         constructor(x,y,r,vx,vy){
                 this.x = x;
                 this.y = y;
                 this.r = r;
                 this.vx = vx;
                 this.vy = vy;
-                this.palette = ["#E59577","#EB8851","#774E7A","#763142","#243E81"];
-                this.color = color(random(this.palette));
+                this.color = color(random(Projectile.palette));
         }
 
         display(){
